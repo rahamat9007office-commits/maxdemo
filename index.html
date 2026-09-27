@@ -23,8 +23,6 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css?v=20260927-12" />
-
-
   </head>
 
   <body>
@@ -175,7 +173,9 @@
           <!-- CUSTOMER SIDEBAR -->
           <aside class="customer-sidebar" id="customerSidebar">
             <div class="sidebar-user-card">
-              <div class="sidebar-avatar" id="sidebarAvatar"><i class="fa-solid fa-user"></i></div>
+              <div class="sidebar-avatar" id="sidebarAvatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
 
               <div>
                 <span class="sidebar-greeting">Welcome</span>
@@ -277,7 +277,11 @@
               data-page="home"
             >
               <!-- HERO IMAGE SLIDER -->
-              <section class="hero-banner hero-slider" id="shopMax99HeroSlider" aria-label="ShopMax99 promotional banners">
+              <section
+                class="hero-banner hero-slider"
+                id="shopMax99HeroSlider"
+                aria-label="ShopMax99 promotional banners"
+              >
                 <div class="hero-slides" id="shopMax99HeroSlides">
                   <!-- =====================================================
                        ADD YOUR BANNER IMAGES HERE
@@ -287,13 +291,32 @@
                        a time and the slider moves in the same direction.
                   ====================================================== -->
                   <div class="hero-slide active">
-                    <img src="image/banner-1.jpg" alt="ShopMax99 promotional banner 1" class="hero-slide-image" />
+                    <img
+                      src="image/bnr1.jpg"
+                      alt="ShopMax99 promotional banner 1"
+                      class="hero-slide-image"
+                    />
                   </div>
                   <div class="hero-slide">
-                    <img src="image/banner-2.jpg" alt="ShopMax99 promotional banner 2" class="hero-slide-image" />
+                    <img
+                      src="image/bnr2.jpg"
+                      alt="ShopMax99 promotional banner 2"
+                      class="hero-slide-image"
+                    />
                   </div>
                   <div class="hero-slide">
-                    <img src="image/banner-3.jpg" alt="ShopMax99 promotional banner 3" class="hero-slide-image" />
+                    <img
+                      src="image/bnr3.jpg"
+                      alt="ShopMax99 promotional banner 3"
+                      class="hero-slide-image"
+                    />
+                  </div>
+                  <div class="hero-slide">
+                    <img
+                      src="image/bnr4.jpg"
+                      alt="ShopMax99 promotional banner 3"
+                      class="hero-slide-image"
+                    />
                   </div>
                 </div>
 
@@ -301,14 +324,36 @@
                   <span class="hero-small-text"> SHOP SMART. SHOP EASY. </span>
                   <h1>Everything You Need, <span>All in One Place.</span></h1>
                   <p>Discover products at prices you will love.</p>
-                  <button type="button" class="primary-btn hero-shop-btn" data-customer-page="categories">
+                  <button
+                    type="button"
+                    class="primary-btn hero-shop-btn"
+                    data-customer-page="categories"
+                  >
                     Shop Now <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>
 
-                <button type="button" class="hero-slider-arrow hero-slider-prev" id="heroSliderPrev" aria-label="Previous banner"><i class="fa-solid fa-chevron-left"></i></button>
-                <button type="button" class="hero-slider-arrow hero-slider-next" id="heroSliderNext" aria-label="Next banner"><i class="fa-solid fa-chevron-right"></i></button>
-                <div class="hero-slider-dots" id="heroSliderDots" aria-label="Banner navigation"></div>
+                <button
+                  type="button"
+                  class="hero-slider-arrow hero-slider-prev"
+                  id="heroSliderPrev"
+                  aria-label="Previous banner"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  type="button"
+                  class="hero-slider-arrow hero-slider-next"
+                  id="heroSliderNext"
+                  aria-label="Next banner"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div
+                  class="hero-slider-dots"
+                  id="heroSliderDots"
+                  aria-label="Banner navigation"
+                ></div>
               </section>
 
               <!-- QUICK CATEGORIES -->
@@ -551,12 +596,24 @@
                     <span class="section-kicker">PRODUCTS</span>
                     <h2 id="categoryProductsTitle">All Products</h2>
                   </div>
-                  <span class="product-result-text" id="categoryProductResultText">Choose a category to browse products.</span>
+                  <span
+                    class="product-result-text"
+                    id="categoryProductResultText"
+                    >Choose a category to browse products.</span
+                  >
                 </div>
-                <div class="category-filter-pills" id="categoryFilterPills"></div>
-                <div class="product-grid category-product-grid" id="categoryProductGrid"></div>
+                <div
+                  class="category-filter-pills"
+                  id="categoryFilterPills"
+                ></div>
+                <div
+                  class="product-grid category-product-grid"
+                  id="categoryProductGrid"
+                ></div>
                 <div class="empty-state" id="categoryProductEmptyState" hidden>
-                  <div class="empty-state-icon"><i class="fa-solid fa-box-open"></i></div>
+                  <div class="empty-state-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                  </div>
                   <h3>No products found</h3>
                   <p>No products are currently listed in this category.</p>
                 </div>
@@ -944,58 +1001,386 @@
                          PROFILE PAGE
                     ========================================== -->
 
-            <section id="customerProfile" class="customer-page customer-profile-page" data-page="profile" hidden>
+            <section
+              id="customerProfile"
+              class="customer-page customer-profile-page"
+              data-page="profile"
+              hidden
+            >
               <div class="page-header profile-page-heading">
-                <div><span class="section-kicker">ACCOUNT CENTER</span><h1>My Profile</h1><p>Apni personal, contact aur delivery details ek jagah manage karein.</p></div>
-                <div class="profile-completion-pill" id="profileCompletionPill"><i class="fa-solid fa-shield-heart"></i> Profile 0% Complete</div>
+                <div>
+                  <span class="section-kicker">ACCOUNT CENTER</span>
+                  <h1>My Profile</h1>
+                  <p>
+                    Apni personal, contact aur delivery details ek jagah manage
+                    karein.
+                  </p>
+                </div>
+                <div class="profile-completion-pill" id="profileCompletionPill">
+                  <i class="fa-solid fa-shield-heart"></i> Profile 0% Complete
+                </div>
               </div>
 
               <div id="profileGuestState" class="profile-guest-state" hidden>
-                <div class="profile-guest-icon"><i class="fa-solid fa-user-lock"></i></div>
-                <div><h2>Login karke profile manage karein</h2><p>Saved profile details checkout par automatically use hongi.</p></div>
-                <button type="button" class="primary-btn" id="profileGuestLoginBtn">Login / Sign Up</button>
+                <div class="profile-guest-icon">
+                  <i class="fa-solid fa-user-lock"></i>
+                </div>
+                <div>
+                  <h2>Login karke profile manage karein</h2>
+                  <p>
+                    Saved profile details checkout par automatically use hongi.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="primary-btn"
+                  id="profileGuestLoginBtn"
+                >
+                  Login / Sign Up
+                </button>
               </div>
 
               <div id="profileLoggedInContent" class="profile-dashboard" hidden>
                 <div class="profile-hero-card">
                   <div class="profile-photo-area">
-                    <div class="profile-avatar profile-avatar-large" id="profileAvatarPreview"><i class="fa-solid fa-user"></i></div>
-                    <div><label class="profile-upload-btn"><i class="fa-solid fa-camera"></i> Change Photo<input type="file" id="profilePictureInput" accept="image/*" hidden></label><small>JPG/PNG/WebP • maximum 200 KB</small></div>
+                    <div
+                      class="profile-avatar profile-avatar-large"
+                      id="profileAvatarPreview"
+                    >
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                      <label class="profile-upload-btn"
+                        ><i class="fa-solid fa-camera"></i> Change Photo<input
+                          type="file"
+                          id="profilePictureInput"
+                          accept="image/*"
+                          hidden /></label
+                      ><small>JPG/PNG/WebP • maximum 200 KB</small>
+                    </div>
                   </div>
-                  <div class="profile-hero-info"><span class="profile-status-badge"><i class="fa-solid fa-circle-check"></i> Customer Account</span><h2 id="profileName">ShopMax User</h2><p id="profileEmail">Email not added</p><span id="profileMobileDisplay">Mobile not added</span></div>
-                  <div class="profile-account-meta"><span>Customer ID</span><strong id="profileCustomerId">—</strong></div>
+                  <div class="profile-hero-info">
+                    <span class="profile-status-badge"
+                      ><i class="fa-solid fa-circle-check"></i> Customer
+                      Account</span
+                    >
+                    <h2 id="profileName">ShopMax User</h2>
+                    <p id="profileEmail">Email not added</p>
+                    <span id="profileMobileDisplay">Mobile not added</span>
+                  </div>
+                  <div class="profile-account-meta">
+                    <span>Customer ID</span
+                    ><strong id="profileCustomerId">—</strong>
+                  </div>
                 </div>
 
                 <div class="profile-section-grid">
-                  <section class="profile-detail-card" data-profile-card="personal">
-                    <div class="profile-card-heading"><div class="profile-card-icon"><i class="fa-solid fa-id-card"></i></div><div><span>PERSONAL DETAILS</span><h3>Name & Date of Birth</h3></div><button type="button" class="profile-edit-btn" data-profile-edit="personal"><i class="fa-solid fa-pen"></i> Edit</button></div>
-                    <form class="profile-form" id="profilePersonalForm"><div class="profile-form-grid">
-                      <label>Full Name<input id="profileFullName" name="name" type="text" maxlength="80" disabled required></label>
-                      <label>Date of Birth<input id="profileDob" name="dob" type="date" disabled></label>
-                      <label>Gender<select id="profileGender" name="gender" disabled><option value="">Prefer not to say</option><option>Male</option><option>Female</option><option>Other</option></select></label>
-                      <label>Email Address<input id="profileEmailInput" name="email" type="email" maxlength="120" disabled placeholder="Add email address"></label>
-                    </div><div class="profile-form-actions" hidden data-profile-actions="personal"><button type="button" class="secondary-btn" data-profile-cancel="personal">Cancel</button><button type="submit" class="primary-btn">Save Personal Details</button></div></form>
-                  </section>
-
-                  <section class="profile-detail-card" data-profile-card="contact">
-                    <div class="profile-card-heading"><div class="profile-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><div><span>CONTACT</span><h3>Mobile & Email</h3></div><button type="button" class="profile-edit-btn" data-profile-edit="contact"><i class="fa-solid fa-pen"></i> Edit</button></div>
-                    <form class="profile-form" id="profileContactForm"><div class="profile-form-grid">
-                      <label>Mobile Number<div class="profile-mobile-field"><span>+91</span><input id="profileMobile" name="mobile" type="tel" maxlength="10" inputmode="numeric" pattern="[6-9][0-9]{9}" disabled required></div></label>
-                      <label>Email Address<input id="profileContactEmail" name="email" type="email" maxlength="120" disabled placeholder="your@email.com"></label>
+                  <section
+                    class="profile-detail-card"
+                    data-profile-card="personal"
+                  >
+                    <div class="profile-card-heading">
+                      <div class="profile-card-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                      </div>
+                      <div>
+                        <span>PERSONAL DETAILS</span>
+                        <h3>Name & Date of Birth</h3>
+                      </div>
+                      <button
+                        type="button"
+                        class="profile-edit-btn"
+                        data-profile-edit="personal"
+                      >
+                        <i class="fa-solid fa-pen"></i> Edit
+                      </button>
                     </div>
-                    <div id="profileContactOtpBox" class="profile-otp-box" hidden><div><strong><i class="fa-solid fa-shield-halved"></i> OTP verification required</strong><span>Contact details save/update karne ke liye OTP verify karna mandatory hai.</span></div><div class="profile-otp-row"><input id="profileContactOtp" type="text" maxlength="6" inputmode="numeric" placeholder="6-digit OTP"><button type="button" class="secondary-btn" id="profileVerifyContactOtp">Verify & Save</button></div><small id="profileContactDemoOtp"></small></div>
-                    <div class="profile-form-actions" hidden data-profile-actions="contact"><button type="button" class="secondary-btn" data-profile-cancel="contact">Cancel</button><button type="submit" class="primary-btn">Update Contact</button></div></form>
+                    <form class="profile-form" id="profilePersonalForm">
+                      <div class="profile-form-grid">
+                        <label
+                          >Full Name<input
+                            id="profileFullName"
+                            name="name"
+                            type="text"
+                            maxlength="80"
+                            disabled
+                            required
+                        /></label>
+                        <label
+                          >Date of Birth<input
+                            id="profileDob"
+                            name="dob"
+                            type="date"
+                            disabled
+                        /></label>
+                        <label
+                          >Gender<select
+                            id="profileGender"
+                            name="gender"
+                            disabled
+                          >
+                            <option value="">Prefer not to say</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                          </select></label
+                        >
+                        <label
+                          >Email Address<input
+                            id="profileEmailInput"
+                            name="email"
+                            type="email"
+                            maxlength="120"
+                            disabled
+                            placeholder="Add email address"
+                        /></label>
+                      </div>
+                      <div
+                        class="profile-form-actions"
+                        hidden
+                        data-profile-actions="personal"
+                      >
+                        <button
+                          type="button"
+                          class="secondary-btn"
+                          data-profile-cancel="personal"
+                        >
+                          Cancel</button
+                        ><button type="submit" class="primary-btn">
+                          Save Personal Details
+                        </button>
+                      </div>
+                    </form>
                   </section>
 
-                  <section class="profile-detail-card profile-detail-card-wide" data-profile-card="address">
-                    <div class="profile-card-heading"><div class="profile-card-icon"><i class="fa-solid fa-location-dot"></i></div><div><span>DELIVERY ADDRESS</span><h3>Saved Address</h3></div><button type="button" class="profile-edit-btn" data-profile-edit="address"><i class="fa-solid fa-pen"></i> Edit</button></div>
-                    <form class="profile-form" id="profileAddressForm"><div class="profile-form-grid">
-                      <label class="profile-full-field">Address / House / Street<textarea id="profileAddress" name="address" rows="3" maxlength="250" disabled required placeholder="House / flat, street, area"></textarea></label>
-                      <label>City<input id="profileCity" name="city" maxlength="60" type="text" disabled required></label><label>State<input id="profileState" name="state" maxlength="60" type="text" disabled required></label><label>PIN Code<input id="profilePincode" name="pincode" maxlength="6" inputmode="numeric" pattern="[0-9]{6}" type="text" disabled required></label>
-                    </div><div id="profileAddressOtpBox" class="profile-otp-box" hidden><div><strong><i class="fa-solid fa-shield-halved"></i> OTP verification required</strong><span>Delivery address change karne ke liye OTP verify karna mandatory hai.</span></div><div class="profile-otp-row"><input id="profileAddressOtp" type="text" maxlength="6" inputmode="numeric" placeholder="6-digit OTP"><button type="button" class="secondary-btn" id="profileVerifyAddressOtp">Verify & Save</button></div><small id="profileAddressDemoOtp"></small></div><div class="profile-form-actions" hidden data-profile-actions="address"><button type="button" class="secondary-btn" data-profile-cancel="address">Cancel</button><button type="submit" class="primary-btn">Continue with OTP</button></div></form>
+                  <section
+                    class="profile-detail-card"
+                    data-profile-card="contact"
+                  >
+                    <div class="profile-card-heading">
+                      <div class="profile-card-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                      </div>
+                      <div>
+                        <span>CONTACT</span>
+                        <h3>Mobile & Email</h3>
+                      </div>
+                      <button
+                        type="button"
+                        class="profile-edit-btn"
+                        data-profile-edit="contact"
+                      >
+                        <i class="fa-solid fa-pen"></i> Edit
+                      </button>
+                    </div>
+                    <form class="profile-form" id="profileContactForm">
+                      <div class="profile-form-grid">
+                        <label
+                          >Mobile Number
+                          <div class="profile-mobile-field">
+                            <span>+91</span
+                            ><input
+                              id="profileMobile"
+                              name="mobile"
+                              type="tel"
+                              maxlength="10"
+                              inputmode="numeric"
+                              pattern="[6-9][0-9]{9}"
+                              disabled
+                              required
+                            /></div
+                        ></label>
+                        <label
+                          >Email Address<input
+                            id="profileContactEmail"
+                            name="email"
+                            type="email"
+                            maxlength="120"
+                            disabled
+                            placeholder="your@email.com"
+                        /></label>
+                      </div>
+                      <div
+                        id="profileContactOtpBox"
+                        class="profile-otp-box"
+                        hidden
+                      >
+                        <div>
+                          <strong
+                            ><i class="fa-solid fa-shield-halved"></i> OTP
+                            verification required</strong
+                          ><span
+                            >Contact details save/update karne ke liye OTP
+                            verify karna mandatory hai.</span
+                          >
+                        </div>
+                        <div class="profile-otp-row">
+                          <input
+                            id="profileContactOtp"
+                            type="text"
+                            maxlength="6"
+                            inputmode="numeric"
+                            placeholder="6-digit OTP"
+                          /><button
+                            type="button"
+                            class="secondary-btn"
+                            id="profileVerifyContactOtp"
+                          >
+                            Verify & Save
+                          </button>
+                        </div>
+                        <small id="profileContactDemoOtp"></small>
+                      </div>
+                      <div
+                        class="profile-form-actions"
+                        hidden
+                        data-profile-actions="contact"
+                      >
+                        <button
+                          type="button"
+                          class="secondary-btn"
+                          data-profile-cancel="contact"
+                        >
+                          Cancel</button
+                        ><button type="submit" class="primary-btn">
+                          Update Contact
+                        </button>
+                      </div>
+                    </form>
                   </section>
 
-                  <section class="profile-detail-card profile-detail-card-wide profile-security-card"><div class="profile-card-heading"><div class="profile-card-icon"><i class="fa-solid fa-lock"></i></div><div><span>CHECKOUT SECURITY</span><h3>Saved details are locked at checkout</h3></div></div><div class="profile-security-note"><i class="fa-solid fa-circle-info"></i><p>Login ke baad checkout par profile se Full Name, Mobile, Address, City aur PIN automatically fill honge aur edit nahi kiye ja sakenge. Kisi detail ko badalne ke liye My Profile se update karein.</p></div></section>
+                  <section
+                    class="profile-detail-card profile-detail-card-wide"
+                    data-profile-card="address"
+                  >
+                    <div class="profile-card-heading">
+                      <div class="profile-card-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <div>
+                        <span>DELIVERY ADDRESS</span>
+                        <h3>Saved Address</h3>
+                      </div>
+                      <button
+                        type="button"
+                        class="profile-edit-btn"
+                        data-profile-edit="address"
+                      >
+                        <i class="fa-solid fa-pen"></i> Edit
+                      </button>
+                    </div>
+                    <form class="profile-form" id="profileAddressForm">
+                      <div class="profile-form-grid">
+                        <label class="profile-full-field"
+                          >Address / House / Street<textarea
+                            id="profileAddress"
+                            name="address"
+                            rows="3"
+                            maxlength="250"
+                            disabled
+                            required
+                            placeholder="House / flat, street, area"
+                          ></textarea>
+                        </label>
+                        <label
+                          >City<input
+                            id="profileCity"
+                            name="city"
+                            maxlength="60"
+                            type="text"
+                            disabled
+                            required /></label
+                        ><label
+                          >State<input
+                            id="profileState"
+                            name="state"
+                            maxlength="60"
+                            type="text"
+                            disabled
+                            required /></label
+                        ><label
+                          >PIN Code<input
+                            id="profilePincode"
+                            name="pincode"
+                            maxlength="6"
+                            inputmode="numeric"
+                            pattern="[0-9]{6}"
+                            type="text"
+                            disabled
+                            required
+                        /></label>
+                      </div>
+                      <div
+                        id="profileAddressOtpBox"
+                        class="profile-otp-box"
+                        hidden
+                      >
+                        <div>
+                          <strong
+                            ><i class="fa-solid fa-shield-halved"></i> OTP
+                            verification required</strong
+                          ><span
+                            >Delivery address change karne ke liye OTP verify
+                            karna mandatory hai.</span
+                          >
+                        </div>
+                        <div class="profile-otp-row">
+                          <input
+                            id="profileAddressOtp"
+                            type="text"
+                            maxlength="6"
+                            inputmode="numeric"
+                            placeholder="6-digit OTP"
+                          /><button
+                            type="button"
+                            class="secondary-btn"
+                            id="profileVerifyAddressOtp"
+                          >
+                            Verify & Save
+                          </button>
+                        </div>
+                        <small id="profileAddressDemoOtp"></small>
+                      </div>
+                      <div
+                        class="profile-form-actions"
+                        hidden
+                        data-profile-actions="address"
+                      >
+                        <button
+                          type="button"
+                          class="secondary-btn"
+                          data-profile-cancel="address"
+                        >
+                          Cancel</button
+                        ><button type="submit" class="primary-btn">
+                          Continue with OTP
+                        </button>
+                      </div>
+                    </form>
+                  </section>
+
+                  <section
+                    class="profile-detail-card profile-detail-card-wide profile-security-card"
+                  >
+                    <div class="profile-card-heading">
+                      <div class="profile-card-icon">
+                        <i class="fa-solid fa-lock"></i>
+                      </div>
+                      <div>
+                        <span>CHECKOUT SECURITY</span>
+                        <h3>Saved details are locked at checkout</h3>
+                      </div>
+                    </div>
+                    <div class="profile-security-note">
+                      <i class="fa-solid fa-circle-info"></i>
+                      <p>
+                        Login ke baad checkout par profile se Full Name, Mobile,
+                        Address, City aur PIN automatically fill honge aur edit
+                        nahi kiye ja sakenge. Kisi detail ko badalne ke liye My
+                        Profile se update karein.
+                      </p>
+                    </div>
+                  </section>
                 </div>
               </div>
             </section>
@@ -1044,7 +1429,14 @@
               <span id="sellerHeaderName"> Seller </span>
             </button>
 
-            <button type="button" class="workspace-theme-btn" data-theme-panel-toggle title="Switch theme" aria-label="Switch light and dark mode" aria-pressed="false">
+            <button
+              type="button"
+              class="workspace-theme-btn"
+              data-theme-panel-toggle
+              title="Switch theme"
+              aria-label="Switch light and dark mode"
+              aria-pressed="false"
+            >
               <i class="fa-solid fa-moon"></i><span>Theme</span>
             </button>
 
@@ -1199,7 +1591,14 @@
               <span>Admin</span>
             </button>
 
-            <button type="button" class="workspace-theme-btn" data-theme-panel-toggle title="Switch theme" aria-label="Switch light and dark mode" aria-pressed="false">
+            <button
+              type="button"
+              class="workspace-theme-btn"
+              data-theme-panel-toggle
+              title="Switch theme"
+              aria-label="Switch light and dark mode"
+              aria-pressed="false"
+            >
               <i class="fa-solid fa-moon"></i><span>Theme</span>
             </button>
 
@@ -1239,7 +1638,7 @@
                 <span>Seller Accounts</span>
               </button>
 
-                  <button
+              <button
                 type="button"
                 class="workspace-nav-item"
                 data-admin-page="all-sellers"
@@ -1360,29 +1759,49 @@
                 <span>Settings</span>
               </button>
 
-              <button type="button" class="workspace-nav-item" data-admin-page="seller-payments">
+              <button
+                type="button"
+                class="workspace-nav-item"
+                data-admin-page="seller-payments"
+              >
                 <i class="fa-solid fa-wallet"></i>
                 <span>Seller Payments</span>
               </button>
 
               <div class="support-nav-divider">SUPPORT & ACCESS</div>
 
-              <button type="button" class="workspace-nav-item" data-admin-page="support-staff">
+              <button
+                type="button"
+                class="workspace-nav-item"
+                data-admin-page="support-staff"
+              >
                 <i class="fa-solid fa-headset"></i>
                 <span>Support Staff</span>
               </button>
 
-              <button type="button" class="workspace-nav-item" data-admin-page="pay-to-staff">
+              <button
+                type="button"
+                class="workspace-nav-item"
+                data-admin-page="pay-to-staff"
+              >
                 <i class="fa-solid fa-hand-holding-dollar"></i>
                 <span>Pay to Staff</span>
               </button>
 
-              <button type="button" class="workspace-nav-item" data-admin-page="support-requests">
+              <button
+                type="button"
+                class="workspace-nav-item"
+                data-admin-page="support-requests"
+              >
                 <i class="fa-solid fa-file-circle-check"></i>
                 <span>Support Requests</span>
               </button>
 
-              <button type="button" class="workspace-nav-item" data-admin-page="support-audit">
+              <button
+                type="button"
+                class="workspace-nav-item"
+                data-admin-page="support-audit"
+              >
                 <i class="fa-solid fa-clock-rotate-left"></i>
                 <span>Support Audit Log</span>
               </button>
@@ -1724,19 +2143,48 @@
          becomes visible.
     ========================================================== -->
     <div class="modal-overlay" id="masterPasskeyModal" hidden>
-      <div class="modal-card auth-modal master-login-modal" role="dialog" aria-modal="true" aria-labelledby="masterPasskeyTitle">
-        <button type="button" class="modal-close" data-close-modal="masterPasskeyModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        class="modal-card auth-modal master-login-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="masterPasskeyTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="masterPasskeyModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="modal-icon"><i class="fa-solid fa-key"></i></div>
         <h2 id="masterPasskeyTitle">Master Access</h2>
-        <p class="modal-subtitle">Enter the authorized master passkey to continue.</p>
+        <p class="modal-subtitle">
+          Enter the authorized master passkey to continue.
+        </p>
         <form id="masterPasskeyForm" autocomplete="off">
           <div class="form-group">
             <label for="masterPasskeyInput">Master Passkey</label>
-            <input id="masterPasskeyInput" name="passkey" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" autocomplete="off" required placeholder="Enter 10-digit passkey" />
+            <input
+              id="masterPasskeyInput"
+              name="passkey"
+              type="password"
+              inputmode="numeric"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              autocomplete="off"
+              required
+              placeholder="Enter 10-digit passkey"
+            />
           </div>
-          <button type="submit" class="primary-btn full-width">Continue to Master Login <i class="fa-solid fa-arrow-right"></i></button>
+          <button type="submit" class="primary-btn full-width">
+            Continue to Master Login <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </form>
-        <p class="auth-note">The Admin, Seller Support and Customer Support login options are available only after successful verification.</p>
+        <p class="auth-note">
+          The Admin, Seller Support and Customer Support login options are
+          available only after successful verification.
+        </p>
       </div>
     </div>
 
@@ -1745,17 +2193,72 @@
          Admin + Seller Support + Customer Support
     ========================================================== -->
     <div class="modal-overlay" id="masterLoginModal" hidden>
-      <div class="modal-card auth-modal master-login-modal" role="dialog" aria-modal="true" aria-labelledby="masterLoginTitle">
-        <button type="button" class="modal-close" data-close-modal="masterLoginModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        class="modal-card auth-modal master-login-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="masterLoginTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="masterLoginModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="modal-icon"><i class="fa-solid fa-shield-halved"></i></div>
         <h2 id="masterLoginTitle">ShopMax99 Master Login</h2>
-        <p class="modal-subtitle">Choose the internal account area you need to access.</p>
+        <p class="modal-subtitle">
+          Choose the internal account area you need to access.
+        </p>
         <div class="master-login-options">
-          <button type="button" class="master-login-option" data-master-open="admin"><span class="master-login-icon"><i class="fa-solid fa-user-shield"></i></span><span><strong>Admin Login</strong><small>Full platform master control</small></span><i class="fa-solid fa-chevron-right"></i></button>
-          <button type="button" class="master-login-option" data-master-open="seller_support"><span class="master-login-icon"><i class="fa-solid fa-store"></i></span><span><strong>Seller Support Login</strong><small>Assist sellers with read-only lookup + approval requests</small></span><i class="fa-solid fa-chevron-right"></i></button>
-          <button type="button" class="master-login-option" data-master-open="customer_support"><span class="master-login-icon"><i class="fa-solid fa-headset"></i></span><span><strong>Customer Support Login</strong><small>Assist customers with account/order lookup + approval requests</small></span><i class="fa-solid fa-chevron-right"></i></button>
+          <button
+            type="button"
+            class="master-login-option"
+            data-master-open="admin"
+          >
+            <span class="master-login-icon"
+              ><i class="fa-solid fa-user-shield"></i></span
+            ><span
+              ><strong>Admin Login</strong
+              ><small>Full platform master control</small></span
+            ><i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button
+            type="button"
+            class="master-login-option"
+            data-master-open="seller_support"
+          >
+            <span class="master-login-icon"
+              ><i class="fa-solid fa-store"></i></span
+            ><span
+              ><strong>Seller Support Login</strong
+              ><small
+                >Assist sellers with read-only lookup + approval requests</small
+              ></span
+            ><i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button
+            type="button"
+            class="master-login-option"
+            data-master-open="customer_support"
+          >
+            <span class="master-login-icon"
+              ><i class="fa-solid fa-headset"></i></span
+            ><span
+              ><strong>Customer Support Login</strong
+              ><small
+                >Assist customers with account/order lookup + approval
+                requests</small
+              ></span
+            ><i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-        <p class="auth-note">Support usernames and passwords are created and controlled only by Admin.</p>
+        <p class="auth-note">
+          Support usernames and passwords are created and controlled only by
+          Admin.
+        </p>
       </div>
     </div>
 
@@ -1763,18 +2266,55 @@
          SUPPORT LOGIN MODAL
     ========================================================== -->
     <div class="modal-overlay" id="supportLoginModal" hidden>
-      <div class="modal-card auth-modal" role="dialog" aria-modal="true" aria-labelledby="supportLoginTitle">
-        <button type="button" class="modal-close" data-close-modal="supportLoginModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        class="modal-card auth-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="supportLoginTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="supportLoginModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="modal-icon"><i class="fa-solid fa-headset"></i></div>
         <h2 id="supportLoginTitle">Support Login</h2>
-        <p class="modal-subtitle" id="supportLoginNote">Use the username and password provided by the ShopMax99 Admin.</p>
+        <p class="modal-subtitle" id="supportLoginNote">
+          Use the username and password provided by the ShopMax99 Admin.
+        </p>
         <form id="supportLoginForm">
-          <input type="hidden" id="supportLoginType" value="seller_support">
-          <div class="form-group"><label for="supportLoginUsername">Username</label><input id="supportLoginUsername" name="username" autocomplete="username" required placeholder="Support username"></div>
-          <div class="form-group"><label for="supportLoginPassword">Password</label><input id="supportLoginPassword" name="password" type="password" autocomplete="current-password" required placeholder="Support password"></div>
-          <button type="submit" class="primary-btn full-width">Login to Support Center <i class="fa-solid fa-arrow-right"></i></button>
+          <input type="hidden" id="supportLoginType" value="seller_support" />
+          <div class="form-group">
+            <label for="supportLoginUsername">Username</label
+            ><input
+              id="supportLoginUsername"
+              name="username"
+              autocomplete="username"
+              required
+              placeholder="Support username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="supportLoginPassword">Password</label
+            ><input
+              id="supportLoginPassword"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              placeholder="Support password"
+            />
+          </div>
+          <button type="submit" class="primary-btn full-width">
+            Login to Support Center <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </form>
-        <p class="auth-note">No self-registration. Only Admin can create or block support IDs.</p>
+        <p class="auth-note">
+          No self-registration. Only Admin can create or block support IDs.
+        </p>
       </div>
     </div>
 
@@ -1844,11 +2384,14 @@
         </form>
 
         <div class="admin-recovery-row">
-          <button type="button" class="text-btn" id="openAdminRecovery">Forgot login details? Change Admin Email / Password</button>
+          <button type="button" class="text-btn" id="openAdminRecovery">
+            Forgot login details? Change Admin Email / Password
+          </button>
         </div>
 
         <p class="auth-note">
-          Admin recovery is available using the authorized recovery phone or email.
+          Admin recovery is available using the authorized recovery phone or
+          email.
         </p>
       </div>
     </div>
@@ -1858,21 +2401,52 @@
          Frontend prototype challenge; backend OTP provider can replace this later.
     ========================================================== -->
     <div class="modal-overlay" id="adminOtpModal" hidden>
-      <div class="modal-card auth-modal" role="dialog" aria-modal="true" aria-labelledby="adminOtpTitle">
-        <button type="button" class="modal-close" data-close-modal="adminOtpModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        class="modal-card auth-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="adminOtpTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="adminOtpModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="modal-icon"><i class="fa-solid fa-shield-halved"></i></div>
         <h2 id="adminOtpTitle">Admin OTP Verification</h2>
-        <p class="modal-subtitle" id="adminOtpDestination">Enter the one-time verification code.</p>
+        <p class="modal-subtitle" id="adminOtpDestination">
+          Enter the one-time verification code.
+        </p>
         <form id="adminOtpForm">
           <div class="form-group">
             <label for="adminOtpInput">6-Digit OTP</label>
-            <input id="adminOtpInput" name="otp" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" autocomplete="one-time-code" required placeholder="Enter OTP" />
+            <input
+              id="adminOtpInput"
+              name="otp"
+              inputmode="numeric"
+              maxlength="6"
+              pattern="[0-9]{6}"
+              autocomplete="one-time-code"
+              required
+              placeholder="Enter OTP"
+            />
           </div>
           <div class="admin-otp-demo" id="adminOtpDemo" hidden></div>
-          <button type="submit" class="primary-btn full-width">Verify OTP <i class="fa-solid fa-arrow-right"></i></button>
+          <button type="submit" class="primary-btn full-width">
+            Verify OTP <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </form>
-        <button type="button" class="text-btn full-width" id="adminOtpResend">Resend OTP</button>
-        <p class="auth-note">Prototype mode: the OTP is generated locally. When backend authentication is connected, this same challenge will be delivered through the configured verified channel.</p>
+        <button type="button" class="text-btn full-width" id="adminOtpResend">
+          Resend OTP
+        </button>
+        <p class="auth-note">
+          Prototype mode: the OTP is generated locally. When backend
+          authentication is connected, this same challenge will be delivered
+          through the configured verified channel.
+        </p>
       </div>
     </div>
 
@@ -1881,37 +2455,89 @@
          Recovery contacts are fixed in admin.js for this prototype.
     ========================================================== -->
     <div class="modal-overlay" id="adminRecoveryModal" hidden>
-      <div class="modal-card auth-modal" role="dialog" aria-modal="true" aria-labelledby="adminRecoveryTitle">
-        <button type="button" class="modal-close" data-close-modal="adminRecoveryModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div
+        class="modal-card auth-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="adminRecoveryTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="adminRecoveryModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <div class="modal-icon"><i class="fa-solid fa-key"></i></div>
         <h2 id="adminRecoveryTitle">Admin Login Recovery</h2>
-        <p class="modal-subtitle">Verify your authorized recovery phone or email, then set new Admin login details.</p>
+        <p class="modal-subtitle">
+          Verify your authorized recovery phone or email, then set new Admin
+          login details.
+        </p>
 
         <form id="adminRecoveryVerifyForm">
           <div class="form-group">
             <label for="adminRecoveryContact">Recovery Phone or Email</label>
-            <input id="adminRecoveryContact" name="contact" autocomplete="off" required placeholder="Enter authorized phone or email" />
+            <input
+              id="adminRecoveryContact"
+              name="contact"
+              autocomplete="off"
+              required
+              placeholder="Enter authorized phone or email"
+            />
           </div>
-          <button type="submit" class="primary-btn full-width">Verify Recovery Contact <i class="fa-solid fa-shield-check"></i></button>
+          <button type="submit" class="primary-btn full-width">
+            Verify Recovery Contact <i class="fa-solid fa-shield-check"></i>
+          </button>
         </form>
 
-        <form id="adminRecoveryChangeForm" hidden class="admin-recovery-change-form">
+        <form
+          id="adminRecoveryChangeForm"
+          hidden
+          class="admin-recovery-change-form"
+        >
           <div class="form-group">
             <label for="newAdminEmail">New Admin Email</label>
-            <input type="email" id="newAdminEmail" required placeholder="New admin email" autocomplete="username" />
+            <input
+              type="email"
+              id="newAdminEmail"
+              required
+              placeholder="New admin email"
+              autocomplete="username"
+            />
           </div>
           <div class="form-group">
             <label for="newAdminPassword">New Admin Password</label>
-            <input type="password" id="newAdminPassword" minlength="6" required placeholder="Minimum 6 characters" autocomplete="new-password" />
+            <input
+              type="password"
+              id="newAdminPassword"
+              minlength="6"
+              required
+              placeholder="Minimum 6 characters"
+              autocomplete="new-password"
+            />
           </div>
           <div class="form-group">
             <label for="confirmAdminPassword">Confirm New Password</label>
-            <input type="password" id="confirmAdminPassword" minlength="6" required placeholder="Repeat new password" autocomplete="new-password" />
+            <input
+              type="password"
+              id="confirmAdminPassword"
+              minlength="6"
+              required
+              placeholder="Repeat new password"
+              autocomplete="new-password"
+            />
           </div>
-          <button type="submit" class="primary-btn full-width">Save New Admin Login</button>
+          <button type="submit" class="primary-btn full-width">
+            Save New Admin Login
+          </button>
         </form>
 
-        <p class="auth-note">After changing the credentials, the recovery phone/email remains available for future recovery.</p>
+        <p class="auth-note">
+          After changing the credentials, the recovery phone/email remains
+          available for future recovery.
+        </p>
       </div>
     </div>
 
@@ -1950,7 +2576,12 @@
     <!-- =========================================================
          SITE MAINTENANCE SCREEN
     ========================================================== -->
-    <section id="shopmax99MaintenanceScreen" class="shopmax99-maintenance-screen" hidden aria-live="polite">
+    <section
+      id="shopmax99MaintenanceScreen"
+      class="shopmax99-maintenance-screen"
+      hidden
+      aria-live="polite"
+    >
       <div class="maintenance-orbit maintenance-orbit-one"></div>
       <div class="maintenance-orbit maintenance-orbit-two"></div>
       <div class="maintenance-panel">
@@ -1959,11 +2590,22 @@
         </div>
         <span class="maintenance-kicker">SHOPMAX99 • TEMPORARILY OFFLINE</span>
         <h1>We’ll be back shortly</h1>
-        <p>ShopMax99 is currently under scheduled maintenance. Customer and seller services are temporarily disabled while we make improvements.</p>
+        <p>
+          ShopMax99 is currently under scheduled maintenance. Customer and
+          seller services are temporarily disabled while we make improvements.
+        </p>
         <div class="maintenance-progress" aria-hidden="true"><span></span></div>
-        <div class="maintenance-status"><i class="fa-solid fa-circle-notch fa-spin"></i><span>System maintenance in progress</span></div>
-        <button type="button" class="maintenance-access-btn" id="maintenanceStaffAccessBtn">
-          <i class="fa-solid fa-shield-halved"></i> Authorized Admin / Staff Access
+        <div class="maintenance-status">
+          <i class="fa-solid fa-circle-notch fa-spin"></i
+          ><span>System maintenance in progress</span>
+        </div>
+        <button
+          type="button"
+          class="maintenance-access-btn"
+          id="maintenanceStaffAccessBtn"
+        >
+          <i class="fa-solid fa-shield-halved"></i> Authorized Admin / Staff
+          Access
         </button>
       </div>
     </section>
@@ -1972,17 +2614,44 @@
          MAINTENANCE PASSKEY MODAL
     ========================================================== -->
     <div class="modal-overlay" id="maintenancePasskeyModal" hidden>
-      <div class="modal-card auth-modal maintenance-passkey-modal" role="dialog" aria-modal="true" aria-labelledby="maintenancePasskeyTitle">
-        <button type="button" class="modal-close" data-close-modal="maintenancePasskeyModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-        <div class="modal-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <div
+        class="modal-card auth-modal maintenance-passkey-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="maintenancePasskeyTitle"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          data-close-modal="maintenancePasskeyModal"
+          aria-label="Close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-icon">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
         <h2 id="maintenancePasskeyTitle">Put Site Under Maintenance</h2>
-        <p class="modal-subtitle" id="maintenancePasskeyText">Enter the master passkey to disable customer and seller access.</p>
+        <p class="modal-subtitle" id="maintenancePasskeyText">
+          Enter the master passkey to disable customer and seller access.
+        </p>
         <form id="maintenancePasskeyForm" autocomplete="off">
           <div class="form-group">
             <label for="maintenancePasskeyInput">Master Passkey</label>
-            <input id="maintenancePasskeyInput" type="password" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" autocomplete="off" required placeholder="Enter 10-digit passkey" />
+            <input
+              id="maintenancePasskeyInput"
+              type="password"
+              inputmode="numeric"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              autocomplete="off"
+              required
+              placeholder="Enter 10-digit passkey"
+            />
           </div>
-          <button type="submit" class="primary-btn full-width">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+          <button type="submit" class="primary-btn full-width">
+            Confirm <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </form>
       </div>
     </div>
@@ -2074,7 +2743,8 @@
           <a href="#" data-footer-action="returns"> Refund Policy </a>
         </div>
       </div>
-    </footer><!-- =========================================================
+    </footer>
+    <!-- =========================================================
          SCRIPTS
     ========================================================== -->
 
@@ -2092,5 +2762,6 @@
          SHOPMAX99 ROLE AUTHENTICATION BRIDGE
          Seller registration/login + Admin login.
          Frontend prototype only.
-    ========================================================== --></body>
+    ========================================================== -->
+  </body>
 </html>
